@@ -9,7 +9,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker} from 'native-base';
-import DatePicker from 'react-native-datepicker';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -30,49 +29,130 @@ export default class App extends Component<Props> {
     headerTintColor: 'black'
   };
 
-  constructor(props)
-  {
-    super(props);
-    this.state = {
-      selected: undefined,
-      date: "02-03-2019"
-    };
+  state = {
+    fullName: '',
+    contactNumber: '',
+    contactEmail: '',
+    streetAddress: '',
+    city: '',
+    zipCode: '',
+    selectedState: 'New Jersey',
+  };
+
+  onNameChange = (fullName) => {
+    this.setState({ fullName: fullName });
   }
-  onValueChange(value: string)
-  {
-    this.setState({
-      selected: value
-    });
+  onContactNumberChange = (contactNumber) => {
+    this.setState({ contactNumber: contactNumber });
+  }
+  onContactEmailChange = (contactEmail) => {
+    this.setState({ contactEmail: contactEmail });
+  }
+  onStreetAddressChange = (streetAddress) => {
+    this.setState({ streetAddress: streetAddress });
+  }
+  onCityChange = (city) => {
+    this.setState({ city: city });
+  }
+  onZipCodeChange = (zipCode) => {
+    this.setState({ zipCode: zipCode });
+  }
+  onselectedStateChange = (selectedState) => {
+    this.setState({ selectedState: selectedState });
   }
 
   render() {
+    const productName = this.props.navigation.getParam('productName', 'N/A');
+    const descriptionName = this.props.navigation.getParam('descriptionName', 'N/A');
+    const conditionChange = this.props.navigation.getParam('conditionChange', 'N/A');
+    const pickupDate = this.props.navigation.getParam('pickupDate', 'N/A');
     return (
         <Container>
           <Content contentContainerStyle={styles.content}>
+
             <Item regular style={styles.descriptionText}>
-              <Input placeholder='Full Name'/>
+              <Input
+                value={this.state.fullName}
+                placeholder='Full Name'
+                onChangeText={this.onNameChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-                  <Input placeholder='Contact Number' />
+              <Input
+                value={this.state.contactNumber}
+                placeholder='Contact Number'
+                keyboardType = "phone-pad"
+                onChangeText={this.onContactNumberChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-              <Input placeholder='Contact Email'/>
+              <Input
+                value={this.state.contactEmail}
+                placeholder='Contact Email'
+                keyboardType = "email-address"
+                textContentType = "emailAddress"
+                onChangeText={this.onContactEmailChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-                  <Input placeholder='Street Address' />
+              <Input
+                value={this.state.streetAddress}
+                placeholder='Street Address'
+                onChangeText={this.onStreetAddressChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-              <Input placeholder='City'/>
+              <Input
+                value={this.state.city}
+                placeholder='City'
+                onChangeText={this.onCityChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-                  <Input placeholder='ZIP Code' />
+              <Input
+                value={this.state.zipCode}
+                placeholder='ZIP Code'
+                keyboardType = "number-pad"
+                maxLength = {5}
+                onChangeText={this.onZipCodeChange}
+              />
             </Item>
+
             <Item regular style={styles.descriptionText}>
-                  <Input disabled placeholder='New Jersey' />
+              <Input
+                disabled
+                value={this.state.selectedState}
+                placeholder='State -- Disabled. Default New Jersey'
+                onChangeText={this.onselectedStateChange}
+              />
             </Item>
-            <Button style = {styles.submitButton} block success
-              onPress={() => this.props.navigation.navigate('App')}>
-              <Text> Contine to Payment Portal</Text>
+
+            <Button
+              style = {styles.submitButton}
+              block
+              success
+              onPress=
+              {() => this.props.navigation.navigate( 'Confirmation',
+                {
+                  fullName: this.fullName,
+                  contactNumber: this.contactNumber,
+                  contactEmail: this.contactEmail,
+                  streetAddress: this.streetAddress,
+                  city: this.city,
+                  zipCode: this.zipCode,
+                  selectedState: this.selectedState,
+                  productName,
+                  descriptionName,
+                  conditionChange,
+                  pickupDate
+                }
+            )}>
+              <Text> Confirmation Page</Text>
             </Button>
           </Content>
       </Container>

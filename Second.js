@@ -7,23 +7,10 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-/**
-DATE PICKER INSTALL
- https://aboutreact.com/react-native-datepicker/
-
-cd ProjectName
-
-npm install react-native-datepicker --save
-
-onPress={() => this.props.navigation.navigate('Second')}>
-
-
-**/
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, H2, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker, DatePicker} from 'native-base';
-// import DatePicker from 'react-native-datepicker';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -44,17 +31,24 @@ export default class App extends Component<Props> {
     headerTintColor: 'black'
   };
 
-  constructor(props) {
-    super(props);
-    this.state = { chosenDate: new Date() };
-    this.setDate = this.setDate.bind(this);
+  state = {
+    productName: '',
+    descriptionName: '',
+    conditionChange: '',
+    pickupDate: ''
+  };
+
+  onProductNameChange = (productName) => {
+    this.setState({ productName: productName });
   }
-  setDate(newDate) {
-    this.setState({ chosenDate: newDate });
+  onDescriptionChange = (descriptionName) => {
+    this.setState({ descriptionName: descriptionName });
   }
-  onValueChange(value: string)
-  {
-    this.setState({selected: value});
+  onConditionChange = (conditionChange) => {
+    this.setState({ conditionChange: conditionChange });
+  }
+  onPickupDateChange = (pickupDate) => {
+    this.setState({ pickupDate: pickupDate });
   }
 
   render() {
@@ -63,7 +57,11 @@ export default class App extends Component<Props> {
           <Content contentContainerStyle={styles.content}>
 
             <Item regular style={styles.searchBar}>
-              <Input placeholder="Enter The Product's Name"/>
+              <Input
+                value={this.state.productName}
+                placeholder="Enter The Product's Name"
+                onChangeText={this.onProductNameChange}
+              />
             </Item>
 
             <Button style = {styles.uploadButton} block success>
@@ -71,35 +69,55 @@ export default class App extends Component<Props> {
             </Button>
 
 
-                <Item regular style={styles.descriptionText}>
-                  <Input placeholder='Write An Awesome Description' />
-                </Item>
+            <Item regular style={styles.descriptionText}>
+              <Input
+                value={this.state.descriptionName}
+                placeholder='Write An Awesome Description'
+                onChangeText={this.onDescriptionChange}
+              />
+            </Item>
 
 
-                <View style = {styles.buttonContainer}>
-                <H3 style = {styles.h3Text}>Condition</H3>
-
-                </View>
+            <Text style = {styles.h3Text}>Condition</Text>
 
 
+            <Item regular style={styles.descriptionText}>
+              <Input
+                value={this.state.conditionChange}
+                placeholder='Tell Us More About The Condition'
+                onChangeText={this.onConditionChange}
+              />
+            </Item>
 
-                <Item regular style={styles.descriptionText}>
-                  <Input placeholder='Tell Us More About The Condition' />
-                </Item>
-
-                <H3 style = {styles.h3Text}>Pickup Date </H3>
-                  <Item regular style={styles.descriptionText}>
-                    <Input placeholder='Format (xx/xx/xxxx)' />
-                  </Item>
-
-
-
-
+            <H3 style = {styles.h3Text}>Pickup Date </H3>
+              <Item regular style={styles.descriptionText}>
+                <Input
+                  value={this.state.pickupDate}
+                  placeholder='Format (xx/xx/xxxx)'
+                  maxLength = {6}
+                  keyboardType = "number-pad"
+                  onChangeText={this.onPickupDateChange}
+                />
+              </Item>
 
 
 
-            <Button style = {styles.submitButton} block success
-              onPress={() => this.props.navigation.navigate('Third')}>
+
+
+
+
+            <Button
+            style = {styles.submitButton}
+            block success
+            onPress=
+            {() => this.props.navigation.navigate( 'ProductConfirmation',
+              {
+                productName: this.state.productName,
+                descriptionName: this.state.descriptionName,
+                conditionChange: this.state.conditionChange,
+                pickupDate: this.state.pickupDate
+              }
+            )}>
               <Text> Next: Customer Info</Text>
             </Button>
 
@@ -157,7 +175,7 @@ const styles = StyleSheet.create({
 
   },
   h3Text:{
-    paddingVertical: '2%',
+    //paddingVertical: 3,
     fontSize: 18,
     color: 'white'
   },

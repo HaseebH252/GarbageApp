@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "55027288263",
+    "firebase_url": "https://junkapp-afd41.firebaseio.com",
+    "project_id": "junkapp-afd41",
+    "storage_bucket": "junkapp-afd41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55027288263:android:90693d735c94c567",
+        "android_client_info": {
+          "package_name": "com.albums"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55027288263-nuhabef723892d6t8vdqdom7p61ivrij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCccvTL-SJd_5uFdYE9tGyyP_NND66NPF0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

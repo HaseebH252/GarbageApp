@@ -1,0 +1,16 @@
+Assignment for 4/1
+
+Write have all objects be able to write to the database
+
+
+
+
+List of all the Git Commands:
+  {
+    https://github.com/joshnh/Git-Commands
+  }
+
+How to write to the database:
+  {
+    https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b
+  }

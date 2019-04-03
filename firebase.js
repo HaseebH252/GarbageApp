@@ -1,4 +1,14 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow
+ * @lint-ignore-every XPLATJSCOPYRIGHT1
+ */
+
 import * as firebase from 'firebase';
+
 const config = {
   apiKey: "AtzaSyAhqPILYiQz4-f5pIy3lYXz-GIDYqTZcuI",
   authDomain: "https://garbageapp-d3bd6.firebaseapp.com/",
@@ -9,4 +19,5 @@ const config = {
 }
 firebase.initializeApp(config);
 const databaseRef = firebase.database().ref();
+
 export const todosRef = databaseRef.child("todos")

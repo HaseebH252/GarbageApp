@@ -1,6 +1,6 @@
 import * as firebase from 'firebase';
 const config = {
-  apiKey: "AIzaSyAhqPILYiQz4-f5pIy3lYXz-GIDYqTZcuI",
+  apiKey: "AtzaSyAhqPILYiQz4-f5pIy3lYXz-GIDYqTZcuI",
   authDomain: "https://garbageapp-d3bd6.firebaseapp.com/",
   databaseURL: "http://garbageapp-d3bd6.firebaseio.com",
   projectId:"garbageapp-d3bd6",

@@ -9,6 +9,8 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker} from 'native-base';
+import firebase from 'react-native-firebase';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,6 +21,12 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+  ref = firebase.firestore().collection('productInfo');
+
+  state = {
+    productInfo: []
+  };
+
   static navigationOptions =
   {
     title: 'Confirmation',
@@ -28,6 +36,17 @@ export default class App extends Component<Props> {
     },
     headerTintColor: 'black'
   };
+
+  addToDatabase(productName,descriptionName,conditionChange,pickupDate,productPhoto) {
+    this.ref.add({
+      prodName: productName,
+      prodDesc: descriptionName,
+      prodCond: conditionChange,
+      prodDate: pickupDate,
+      prodPhoto: productPhoto
+
+    });
+  }
 
 
 
@@ -41,6 +60,7 @@ export default class App extends Component<Props> {
     const descriptionName = this.props.navigation.getParam('descriptionName', 'N/A');
     const conditionChange = this.props.navigation.getParam('conditionChange', 'N/A');
     const pickupDate = this.props.navigation.getParam('pickupDate', 'N/A');
+    const productPhoto = this.props.navigation.getParam('productPhoto', 'N/A');
 
 
     return (
@@ -51,6 +71,7 @@ export default class App extends Component<Props> {
           <Text style = {styles.h3Text}>Product Description: {descriptionName}</Text>
           <Text style = {styles.h3Text}>Product Condition: {conditionChange}</Text>
           <Text style = {styles.h3Text}>Product Pickup Date: {pickupDate}</Text>
+          <Text style = {styles.h3Text}>Product Photo URI: {productPhoto}</Text>
 
 
 
@@ -65,7 +86,10 @@ export default class App extends Component<Props> {
             </Button>
 
             <Button bordered success
-            onPress={() => this.props.navigation.navigate('Third')}
+            onPress={() => {
+              this.props.navigation.navigate('Third');
+              this.addToDatabase(productName,descriptionName,conditionChange,pickupDate,productPhoto);
+            }}
             style={styles.submitButton}>
               <Text style={styles.buttonText}>Continue</Text>
             </Button>

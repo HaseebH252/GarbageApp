@@ -18,7 +18,9 @@ import {
   View,
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
-import { Button, Text, H2, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker, DatePicker, Image} from 'native-base';
+import { Button, Text, H2, H3, Container, Content, Header, Form, Item, Input, Label, Icon,Image} from 'native-base';
+import DatePicker from 'react-native-datepicker'
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -28,16 +30,6 @@ const instructions = Platform.select({
 });
 
 
-
-
-
-const options = {
-  title: 'Choose Option',
-  storageOptions: {
-    skipBackup: true,
-    path: 'images',
-  },
-};
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -52,24 +44,27 @@ export default class App extends Component<Props> {
   };
 
   state = {
-
-    avatarSource: null,
-
+    photo:null,
 
     productName: '',
+    productPhoto: '',
     descriptionName: '',
     conditionChange: '',
     pickupDate: ''
 
   };
 
-  constructor(props)
-  {
-  super(props);
 
-  this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
-}
-
+  handleChoosePhoto = () => {
+     const options = {
+       noData: true,
+     }
+     ImagePicker.launchImageLibrary(options, response => {
+       if (response.uri) {
+         this.setState({ photo: response })
+       }
+     })
+   }
 
 
 
@@ -86,61 +81,15 @@ export default class App extends Component<Props> {
     this.setState({ pickupDate: pickupDate });
   }
 
-  // Image Upload Function
-
-
-  selectPhotoTapped()
-  {
-    const options =
-    {
-      quality: 1.0,
-      maxWidth: 500,
-      maxHeight: 500,
-      storageOptions:
-      {
-        skipBackup: true,
-      },
-    };
-  }
 
 
 
 
-
-  onImageUpload = () =>
-  {
-    ImagePicker.showImagePicker(options, (response) =>
-    {
-      console.log('Response = ', response);
-
-      if (response.didCancel)
-      {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error)
-      {
-        console.log('ImagePicker Error: ', response.error);
-      }
-      else if (response.customButton)
-      {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else
-      {
-        const source = { uri: response.uri };
-
-        // You can also display the image using data:
-        // const source = { uri: 'data:image/jpeg;base64,' + response.data };
-
-        this.setState
-        ({
-          avatarSource: source,
-        });
-      }
-    });
-  }
 
   render() {
+
+    const { photo } = this.state
+
     return (
         <Container>
           <Content contentContainerStyle={styles.content}>
@@ -153,25 +102,11 @@ export default class App extends Component<Props> {
               />
             </Item>
 
-
-
-
-            <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                      <View
-                        style={[
-                          styles.avatar,
-                          styles.avatarContainer,
-                          { marginBottom: 20 },
-                        ]}
-                      >
-                        {this.state.avatarSource === null ? (
-                          <Text>Select a Photo</Text>
-                        ) : (
-                          <Image style={styles.avatar} source={this.state.avatarSource} />
-                        )}
-                      </View>
-                    </TouchableOpacity>
-
+            <Button
+              style = {styles.UploadImage} bordered success
+              onPress={this.handleChoosePhoto} >
+              <Text> Choose Photo </Text>
+            </Button>
 
 
             <Item regular style={styles.descriptionText}>
@@ -197,32 +132,40 @@ export default class App extends Component<Props> {
             </Item>
 
             <H3 style = {styles.h3Text}>Pickup Date </H3>
-              <Item regular style={styles.descriptionText}>
-                <Input
-                  value={this.state.pickupDate}
-                  placeholder='Format (xx/xx/xxxx)'
-                  maxLength = {6}
-                  keyboardType = "number-pad"
-                  onChangeText={this.onPickupDateChange}
-                />
-              </Item>
 
+            <DatePicker
+              style={{width: 200}}
+              date={this.state.pickupDate}
+              mode="date"
+              placeholder="Select Date"
+              format="MM-DD-YYYY"
+              minDate="01-01-2019"
+              maxDate="12-31-2019"
+              confirmBtnText="Confirm"
+              cancelBtnText="Cancel"
+              customStyles={{
+                dateIcon: {
+                  position: 'absolute',
+                  left: 0,
+                  top: 9,
+                  marginLeft: 0
+                },
+                dateInput: {
+                  marginLeft: 36,
+                  top: 5,
+                  backgroundColor: "#ffffff"
+                }
+              }}
+              onDateChange={(pickupDate) => {this.setState({pickupDate: pickupDate})}}            />
 
-
-
-
-
-
-            <Button
-            style = {styles.submitButton}
-            block success
-            onPress=
-            {() => this.props.navigation.navigate( 'ProductConfirmation',
+            <Button style = {styles.submitButton} block success
+            onPress={() => this.props.navigation.navigate( 'ProductConfirmation',
               {
                 productName: this.state.productName,
                 descriptionName: this.state.descriptionName,
                 conditionChange: this.state.conditionChange,
-                pickupDate: this.state.pickupDate
+                pickupDate: this.state.pickupDate,
+                productPhoto: photo.uri
               }
             )}>
               <Text> Next: Customer Info</Text>
@@ -245,9 +188,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#086826"
   },
   submitButton:{
-    marginTop: "auto",
+    marginTop: 50,
     marginBottom: 40,
-    backgroundColor: "#ffffff"
+    backgroundColor: "#ffffff",
+    width:"100%",
+    alignSelf: "center"
+  },
+  UploadImage:{
+    marginTop: 50,
+    marginBottom: 40,
+    backgroundColor: "#ffffff",
+    alignSelf: 'center'
   },
   uploadButton:{
     marginTop: "auto",
@@ -272,9 +223,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 3
   },
-  whiteText: {
-    color: "white"
-  },
+
   conditionDropdown: {
     backgroundColor: 'white',
     flex: 1,

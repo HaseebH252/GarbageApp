@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-16.0.0.aar\\4d868faab0bcbf99fed9d5a66bbe77fb\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "200",
+                        "endColumns": "104",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "5633",
+                        "endColumns": "108",
+                        "endOffsets": "5737"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.0.1.aar\\74e5309a3b039dbeaaefa4d3a009d200\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4",

@@ -144,7 +144,7 @@ export default class App extends Component<Props> {
                   selectedState: this.state.selectedState
                 }
             )}>
-              <Text> Confirmation Page</Text>
+              <Text style= {styles.buttonText}> Confirmation Page</Text>
             </Button>
           </Content>
       </Container>
@@ -156,6 +156,10 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row'
   },
+  buttonText: {
+    alignSelf: 'center',
+    color: 'black'
+    },
   content: {
     paddingHorizontal: '5%',
     flexGrow: 1,

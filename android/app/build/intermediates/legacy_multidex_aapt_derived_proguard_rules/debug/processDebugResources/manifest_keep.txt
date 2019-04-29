@@ -1,2 +1,2 @@
-# Referenced at C:\Users\Haseeb Hussain\JunkApp\android\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22
+# Referenced at C:\Users\Haseeb Hussain\JunkApp\android\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:27
 -keep class com.albums.MainApplication { <init>(...); }

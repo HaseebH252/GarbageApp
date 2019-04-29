@@ -10,6 +10,15 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker} from 'native-base';
 import firebase from 'react-native-firebase';
+import stripe from 'tipsi-stripe'
+
+
+stripe.setOptions({
+  publishableKey: 'pk_test_K5pZcjk0TdV5FndXD4DVt7wA00mvCaBVGx',
+  androidPayMode: 'test',
+});
+
+
 
 
 const instructions = Platform.select({
@@ -36,6 +45,29 @@ export default class App extends Component<Props> {
     },
     headerTintColor: 'black'
   };
+
+
+
+  pay(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState) {
+  stripe.paymentRequestWithNativePay({
+      total_price: '1.00',
+      currency_code: 'USD',
+      shipping_address_required: true,
+      phone_number_required: true,
+      shipping_countries: ['US', 'CA'],
+      line_items: [{
+        currency_code: 'USD',
+        description: 'Tipsi',
+        total_price: '1.00',
+        unit_price: '1.00',
+        quantity: '1',
+      }],
+    }).then((response) => {this.props.navigation.navigate('FinalPage'), this.addToDatabase(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState)});
+}
+
+
+
+
 
   addToDatabase(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState) {
     this.ref.add({
@@ -66,6 +98,8 @@ export default class App extends Component<Props> {
     return (
       <Container>
         <Content contentContainerStyle={styles.content}>
+
+        <View>
           <Text style = {styles.h3Text}>Name: {fullName}</Text>
           <Text style = {styles.h3Text}>Contact Number: {contactNumber}</Text>
           <Text style = {styles.h3Text}>Contact Email: {contactEmail}</Text>
@@ -74,8 +108,11 @@ export default class App extends Component<Props> {
           <Text style = {styles.h3Text}>Zip Code: {zipCode}</Text>
           <Text style = {styles.h3Text}>State: {selectedState}</Text>
 
+        </View>
 
-
+        <View style={styles.payText}>
+          <Text style = {styles.h3Text}> You will be charged $1 to upload this </Text>
+        </View>
 
           <View style={styles.buttonContainer}>
             <Button
@@ -91,7 +128,7 @@ export default class App extends Component<Props> {
 
             <Button bordered success style={styles.submitButton}
             onPress={() => {
-                this.addToDatabase(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState);
+                this.pay(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState);
               }}>
               <Text style={styles.buttonText}>Yup Looks Good</Text>
             </Button>
@@ -110,8 +147,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#086826"
   },
   buttonText: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    color: 'black'
     },
+  payText:{
+    fontSize: 18,
+    color: 'white',
+    paddingVertical: 5,
+    marginTop: 10,
+    position: 'absolute',
+    bottom: 65,
+    alignSelf: 'center'
+  },
   h3Text:{
     fontSize: 18,
     color: 'white',
@@ -125,7 +172,8 @@ const styles = StyleSheet.create({
       padding: 15,
       flex: 1,
       marginRight: 10,
-      marginBottom: 10
+      marginBottom: 10,
+      alignSelf: 'center'
     },
     buttonContainer: {
       flexDirection: 'row',

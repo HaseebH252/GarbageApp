@@ -70,6 +70,23 @@
                         "endColumns": "100",
                         "endOffsets": "5918"
                     }
+                },
+                {
+                    "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-16.0.0.aar\\4d868faab0bcbf99fed9d5a66bbe77fb\\res\\values-my\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "200",
+                        "endColumns": "101",
+                        "endOffsets": "301"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "5923",
+                        "endColumns": "105",
+                        "endOffsets": "6024"
+                    }
                 }
             ]
         }

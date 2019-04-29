@@ -26,17 +26,21 @@ export default class Second extends Component<Props>
      headerTintColor: 'green'
     };
  render() {
-    const uri = "https://www.junkbgoneva.com/wp-content/uploads/2017/10/junk-removal-image.png";
+    const logo = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/logo.png?alt=media&token=c1b0fa6c-28f2-4cec-8189-a08fe7cd59a9";
+    const icon = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/icon.png?alt=media&token=20942027-daaf-4782-bd7d-6860e21d83c2";
     return (
       <Container>
         <Content contentContainerStyle={styles.content}>
-          <Item regular style ={styles.Item}>
-                <H1>Junk BeGone</H1>
-          </Item>
-          <Thumbnail square large source={{uri: uri}} style={{ height: 400, width: 350}}/>
+          <Thumbnail square large source={{uri: logo}} style={{ height: 40, width: 350}}/>
+          <Thumbnail square large source={{uri: icon}} style={{ height: 400, width: 350}}/>
           <Button style = {styles.submitButton} block success
                 onPress={() => this.props.navigation.navigate('Second')}>
-               <Text> Click Here to Begin Your Hunt </Text>
+               <Text style= {styles.buttonText}> Click Here to Begin Your Hunt </Text>
+          </Button>
+
+          <Button style = {styles.submitButton} block success
+                onPress={() => this.props.navigation.navigate('EmailAdd')}>
+               <Text style= {styles.buttonText}> Click Here to Get Added to Our Email List </Text>
           </Button>
         </Content>
       </Container>
@@ -69,10 +73,15 @@ content:
     flexGrow: 1,
     backgroundColor: "#086826"
   },
+  buttonText: {
+    alignSelf: 'center',
+    color: 'black'
+    },
 submitButton:
   {
-    marginTop: 50,
-    marginBottom: 40,
+    marginTop: 'auto',
+    marginBottom: 'auto',
     backgroundColor: "#ffffff"
+
   },
 });

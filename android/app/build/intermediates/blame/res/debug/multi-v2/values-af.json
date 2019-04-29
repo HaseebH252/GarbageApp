@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\Haseeb Hussain\\JunkApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-af\\values-af.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-16.0.0.aar\\4d868faab0bcbf99fed9d5a66bbe77fb\\res\\values-af\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "200",
+                        "endColumns": "99",
+                        "endOffsets": "299"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "5642",
+                        "endColumns": "103",
+                        "endOffsets": "5741"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.0.1.aar\\74e5309a3b039dbeaaefa4d3a009d200\\res\\values-af\\values.xml",
                     "from": {
                         "startLines": "4",

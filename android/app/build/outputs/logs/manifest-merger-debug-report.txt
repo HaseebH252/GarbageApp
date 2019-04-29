@@ -1,15 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
+ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
 MERGED from [:react-native-firebase] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\29e63e7fac01e29af57392dad4472f16\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-payments] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-payments\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-image-picker] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:15:1-26:12
+MERGED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-33:12
+MERGED from [com.google.android.gms:play-services-wallet:16.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-wallet-16.0.0.aar\4d868faab0bcbf99fed9d5a66bbe77fb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\1d2256874e12f576eaf08d32bfa88d75\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-identity:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-identity-15.0.1.aar\d840c2ff174e09e11f91381411c32b2e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\986555d06fcf4b57e01930e319ad510f\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:17:1-34:12
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\d52d7f5f6bec8f112444a003dbe0ef49\AndroidManifest.xml:17:1-55:12
@@ -20,6 +27,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Haseeb Hu
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\eb5b854951001bea184253393239d1f2\AndroidManifest.xml:17:1-29:12
 MERGED from [:react-native-gesture-handler] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.58.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\react-native-0.58.4.aar\8b7d08c7183ab54f75b3520c73e25de7\AndroidManifest.xml:2:1-15:12
+MERGED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:design:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\2338b1c5f09d8828e488536e3fcd6165\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\415c15a38862dfa7b457c25ef1dadb28\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\0ba3476ccd19fe81004fba74da765c7c\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c58372446cff234b071cadc7eeb7c14e\AndroidManifest.xml:2:1-9:12
@@ -32,8 +41,10 @@ MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Haseeb Hussain\.gra
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\c45dc1552412873a9d3427a7e0e4153a\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\23943bb192a282f2ecec9a8372604a4b\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\a1fba97cfdd9f007fcaeb5f4c4077f62\AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.tipsi:CreditCardEntry:1.5.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\CreditCardEntry-1.5.1.aar\d0c3de6bb7b517c97ef61eaac5e32fb9\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87bb8e220eeaff09d84910e056073a42\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\6d98b273820c4613457e467412cd6411\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\2c132177260b770ae65c3521d177cdbd\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c251837c08aa4863e388d2fffebf6692\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\c1df72138a30006b82ccf142f12031a4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\befd3606f1a01074f2fbda9b3fa53243\AndroidManifest.xml:17:1-22:12
@@ -46,6 +57,7 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Haseeb Hussa
 MERGED from [com.android.support:customview:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\8fee91491ba1ba5981bb97f476e55c39\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\cf83959c852e569a4eaa1532c83bfce4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\4728f4b467c27dcdaea4b4913e802143\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\c0ef9997116c482367394e11536f912f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\7ce4a563bdb2407970e30470f0ef2a8d\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8752a310cc3d74dd2fb0783a6a06f00e\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\20aeec46a0194efbe286381c4ee166a1\AndroidManifest.xml:17:1-22:12
@@ -66,20 +78,20 @@ MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Haseeb Huss
 MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\f95e6ae4d70176bf8a23a4f11c9a6580\AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\968ca0ea691f03150e24d3ece2924927\AndroidManifest.xml:1:1-3:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\62e5c7cc27cf3800e4436fa7349ce3f5\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
-INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
 	package
 		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:2:5-25
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12
 		INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -91,6 +103,10 @@ MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Huss
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:10:5-67
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\d52d7f5f6bec8f112444a003dbe0ef49\AndroidManifest.xml:23:5-67
@@ -112,17 +128,25 @@ ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:6:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:7:1-76
+ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:7:18-74
+		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:9:5-27:19
+ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:9:5-34:19
+MERGED from [:react-native-fetch-blob] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-image-picker] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:12:5-18:19
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:12:5-18:19
+MERGED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-31:19
+MERGED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-31:19
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\1d2256874e12f576eaf08d32bfa88d75\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\1d2256874e12f576eaf08d32bfa88d75\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-identity:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-identity-15.0.1.aar\d840c2ff174e09e11f91381411c32b2e\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-identity-15.0.1.aar\d840c2ff174e09e11f91381411c32b2e\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:30:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\986555d06fcf4b57e01930e319ad510f\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\986555d06fcf4b57e01930e319ad510f\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:26:5-32:19
@@ -141,6 +165,8 @@ MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb H
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\eb5b854951001bea184253393239d1f2\AndroidManifest.xml:22:5-27:19
 MERGED from [com.facebook.react:react-native:0.58.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\react-native-0.58.4.aar\8b7d08c7183ab54f75b3520c73e25de7\AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.58.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\react-native-0.58.4.aar\8b7d08c7183ab54f75b3520c73e25de7\AndroidManifest.xml:13:5-20
+MERGED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:11:5-25:19
+MERGED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:11:5-25:19
 MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\0ba3476ccd19fe81004fba74da765c7c\AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\0ba3476ccd19fe81004fba74da765c7c\AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c58372446cff234b071cadc7eeb7c14e\AndroidManifest.xml:7:5-20
@@ -201,6 +227,12 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:26:7-84
 	android:name
 		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:26:17-81
+meta-data#com.google.android.gms.wallet.api.enabled
+ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:29:7-31:34
+	android:value
+		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:31:11-31
+	android:name
+		ADDED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:30:11-67
 uses-sdk
 INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml
@@ -209,14 +241,28 @@ MERGED from [:react-native-firebase] C:\Users\Haseeb Hussain\JunkApp\node_module
 MERGED from [:react-native-firebase] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\29e63e7fac01e29af57392dad4472f16\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\29e63e7fac01e29af57392dad4472f16\AndroidManifest.xml:20:5-43
+MERGED from [:react-native-payments] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-payments\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-payments] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-payments\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:19:5-21:41
+MERGED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-wallet:16.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-wallet-16.0.0.aar\4d868faab0bcbf99fed9d5a66bbe77fb\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:16.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-wallet-16.0.0.aar\4d868faab0bcbf99fed9d5a66bbe77fb\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\1d2256874e12f576eaf08d32bfa88d75\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\1d2256874e12f576eaf08d32bfa88d75\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-identity:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-identity-15.0.1.aar\d840c2ff174e09e11f91381411c32b2e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-identity-15.0.1.aar\d840c2ff174e09e11f91381411c32b2e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\986555d06fcf4b57e01930e319ad510f\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\986555d06fcf4b57e01930e319ad510f\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:20:5-44
@@ -237,6 +283,10 @@ MERGED from [:react-native-gesture-handler] C:\Users\Haseeb Hussain\JunkApp\node
 MERGED from [:react-native-gesture-handler] C:\Users\Haseeb Hussain\JunkApp\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.58.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\react-native-0.58.4.aar\8b7d08c7183ab54f75b3520c73e25de7\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.58.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\react-native-0.58.4.aar\8b7d08c7183ab54f75b3520c73e25de7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\2338b1c5f09d8828e488536e3fcd6165\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\2338b1c5f09d8828e488536e3fcd6165\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\415c15a38862dfa7b457c25ef1dadb28\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\415c15a38862dfa7b457c25ef1dadb28\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\0ba3476ccd19fe81004fba74da765c7c\AndroidManifest.xml:5:5-7:41
@@ -261,10 +311,14 @@ MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Has
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\23943bb192a282f2ecec9a8372604a4b\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\a1fba97cfdd9f007fcaeb5f4c4077f62\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\a1fba97cfdd9f007fcaeb5f4c4077f62\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.tipsi:CreditCardEntry:1.5.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\CreditCardEntry-1.5.1.aar\d0c3de6bb7b517c97ef61eaac5e32fb9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.tipsi:CreditCardEntry:1.5.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\CreditCardEntry-1.5.1.aar\d0c3de6bb7b517c97ef61eaac5e32fb9\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87bb8e220eeaff09d84910e056073a42\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87bb8e220eeaff09d84910e056073a42\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\6d98b273820c4613457e467412cd6411\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\6d98b273820c4613457e467412cd6411\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\2c132177260b770ae65c3521d177cdbd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\2c132177260b770ae65c3521d177cdbd\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c251837c08aa4863e388d2fffebf6692\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c251837c08aa4863e388d2fffebf6692\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\c1df72138a30006b82ccf142f12031a4\AndroidManifest.xml:20:5-44
@@ -289,6 +343,8 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Haseeb Huss
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\cf83959c852e569a4eaa1532c83bfce4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\4728f4b467c27dcdaea4b4913e802143\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\4728f4b467c27dcdaea4b4913e802143\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\c0ef9997116c482367394e11536f912f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\c0ef9997116c482367394e11536f912f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\7ce4a563bdb2407970e30470f0ef2a8d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\7ce4a563bdb2407970e30470f0ef2a8d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8752a310cc3d74dd2fb0783a6a06f00e\AndroidManifest.xml:20:5-44
@@ -355,6 +411,10 @@ MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Huss
 MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-database:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.5.aar\daa56f94591b1cf7846bc4c6663ef52d\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\27a604ec5220e60a242e4b8c6370a683\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\d52d7f5f6bec8f112444a003dbe0ef49\AndroidManifest.xml:24:5-79
@@ -399,6 +459,50 @@ ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussa
 		ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\14de434032b8c2601a104b51313b5f73\AndroidManifest.xml:15:17-111
+activity#com.gettipsi.stripe.OpenBrowserActivity
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-16:75
+	android:launchMode
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-44
+	android:exported
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-72
+	android:name
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-67
+activity#com.gettipsi.stripe.RedirectUriReceiver
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:9-30:20
+	android:launchMode
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:20:13-44
+	android:exported
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:13-36
+	android:theme
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:13-83
+	android:name
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-67
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:example
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:13-29:29
+action#android.intent.action.VIEW
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:23:25-66
+category#android.intent.category.DEFAULT
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:25:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:26:17-78
+	android:name
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:26:27-75
+data
+ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:28:17-50
+	android:scheme
+		ADDED from [:tipsi-stripe] C:\Users\Haseeb Hussain\JunkApp\node_modules\tipsi-stripe\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:28:23-47
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\b68fe64591752fd0f8a0cfe1e9895642\AndroidManifest.xml:28:9-32
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\c7a0dd3e489a5ec1c39dc66d82bcd4be\AndroidManifest.xml:28:13-30:85
 	android:value
@@ -501,6 +605,26 @@ ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb Hu
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\eb5b854951001bea184253393239d1f2\AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\eb5b854951001bea184253393239d1f2\AndroidManifest.xml:24:13-79
+activity#com.stripe.android.view.AddSourceActivity
+ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:12:9-16:20
+	android:windowSoftInputMode
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:15:13-55
+	android:theme
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:13:13-69
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:17:9-20:20
+	android:theme
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:19:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:18:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:21:9-24:20
+	android:theme
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:23:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:8.1.0] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\stripe-android-8.1.0.aar\e5c7fbe215c1aa665481f6e42a329a8f\AndroidManifest.xml:22:13-71
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\0ba3476ccd19fe81004fba74da765c7c\AndroidManifest.xml:10:9-14:39
 	android:authorities
@@ -518,6 +642,6 @@ ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Hasee
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Haseeb Hussain\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\74e5309a3b039dbeaaefa4d3a009d200\AndroidManifest.xml:24:13-58
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Haseeb Hussain\JunkApp\android\app\src\main\AndroidManifest.xml:1:1-36:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

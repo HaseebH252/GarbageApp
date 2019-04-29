@@ -3,15 +3,20 @@ package com.albums;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativepayments.ReactNativePaymentsPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.imagepicker.ImagePickerPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
+import com.gettipsi.stripe.StripeReactPackage;
 import com.facebook.react.ReactPackage;
 import io.invertase.firebase.database.RNFirebaseDatabasePackage;
 import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import io.invertase.firebase.storage.RNFirebaseStoragePackage;
+
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,11 +33,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativePaymentsPackage(),
+            new RNFetchBlobPackage(),
             new ImagePickerPackage(),
             new RNFirebasePackage(),
             new RNFirebaseFirestorePackage(),
             new RNFirebaseDatabasePackage(),
-            new RNGestureHandlerPackage()
+            new RNFirebaseStoragePackage(),
+            new RNGestureHandlerPackage(),
+            new StripeReactPackage()
       );
     }
 

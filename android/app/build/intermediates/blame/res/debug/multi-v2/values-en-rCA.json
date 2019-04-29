@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\Haseeb Hussain\\JunkApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-16.0.0.aar\\4d868faab0bcbf99fed9d5a66bbe77fb\\res\\values-en-rCA\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "204",
+                        "endColumns": "99",
+                        "endOffsets": "303"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "2947",
+                        "endColumns": "103",
+                        "endOffsets": "3046"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Haseeb Hussain\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\7ce4a563bdb2407970e30470f0ef2a8d\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2",

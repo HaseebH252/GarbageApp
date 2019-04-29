@@ -8,8 +8,15 @@
  */
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker} from 'native-base';
+import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker, Thumbnail} from 'native-base';
 import firebase from 'react-native-firebase';
+
+import RNFetchBlob from 'react-native-fetch-blob';
+
+const Blob = RNFetchBlob.polyfill.Blob;
+const fs = RNFetchBlob.fs;
+window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
+window.Blob = Blob;
 
 
 const instructions = Platform.select({
@@ -24,7 +31,8 @@ export default class App extends Component<Props> {
   ref = firebase.firestore().collection('productInfo');
 
   state = {
-    productInfo: []
+    productInfo: [],
+    productURL: null
   };
 
   static navigationOptions =
@@ -37,16 +45,49 @@ export default class App extends Component<Props> {
     headerTintColor: 'black'
   };
 
-  addToDatabase(productName,descriptionName,conditionChange,pickupDate,productPhoto) {
+  addToDatabase(productName,descriptionName,conditionChange,pickupDate,productURL) {
     this.ref.add({
       prodName: productName,
       prodDesc: descriptionName,
       prodCond: conditionChange,
       prodDate: pickupDate,
-      prodPhoto: productPhoto
+      prodPhoto: productURL
 
     });
   }
+
+
+  // The uploadImage function that you are going to use:
+ImageUpload(uri,imageName,mime){
+    return new Promise((resolve, reject) => {
+      const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri
+        let uploadBlob = null
+        const storageRef = firebase.storage().ref("/uploads");
+        const imageRef = storageRef.child(imageName + ".jpg")
+        fs.readFile(uploadUri, 'base64')
+        .then((data) => {
+          return Blob.build(data, { type: `${mime};BASE64` })
+        })
+        .then((blob) => {
+          uploadBlob = blob
+          return imageRef.put(uri, { contentType: mime, name: imageName });
+        })
+        .then(() => {
+          uploadBlob.close()
+          console.log(imageRef.getDownloadURL())
+          this.setState({productURL: imageRef.getDownloadURL()})
+          return imageRef.getDownloadURL()
+
+        })
+        .then((url) => {
+          resolve(url)
+        })
+        .catch((error) => {
+          reject(error)
+        })
+    })
+  }
+
 
 
 
@@ -62,6 +103,8 @@ export default class App extends Component<Props> {
     const pickupDate = this.props.navigation.getParam('pickupDate', 'N/A');
     const productPhoto = this.props.navigation.getParam('productPhoto', 'N/A');
 
+    const {productURL} = this.state;
+
 
     return (
       <Container>
@@ -71,7 +114,19 @@ export default class App extends Component<Props> {
           <Text style = {styles.h3Text}>Product Description: {descriptionName}</Text>
           <Text style = {styles.h3Text}>Product Condition: {conditionChange}</Text>
           <Text style = {styles.h3Text}>Product Pickup Date: {pickupDate}</Text>
-          <Text style = {styles.h3Text}>Product Photo URI: {productPhoto}</Text>
+          <Text style = {styles.h3Text}>Product Photo:</Text>
+
+          <Thumbnail
+          square large
+          source={{uri: productPhoto}}
+          style={
+            {
+              height: 300,
+              alignSelf: 'center',
+              marginTop: 25,
+              width: 300,
+            }
+            }/>
 
 
 
@@ -88,7 +143,8 @@ export default class App extends Component<Props> {
             <Button bordered success
             onPress={() => {
               this.props.navigation.navigate('Third');
-              this.addToDatabase(productName,descriptionName,conditionChange,pickupDate,productPhoto);
+              this.addToDatabase(productName,descriptionName,conditionChange,pickupDate,productURL);
+              this.ImageUpload(productPhoto,productName,'images/jpg');
             }}
             style={styles.submitButton}>
               <Text style={styles.buttonText}>Continue</Text>
@@ -108,7 +164,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#086826"
   },
   buttonText: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    color: 'black'
     },
   h3Text:{
     fontSize: 18,

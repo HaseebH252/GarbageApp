@@ -4,6 +4,9 @@ import Second from './Second';
 import Third from './Third';
 import ProductConfirmation from './ProductConfirmation';
 import Confirmation from './Confirmation';
+import EmailConfirm from './emailConfirm';
+import EmailAdd from './EmailAdd';
+import FinalPage from './FinalPage';
 
 const Router = createStackNavigator(
   {
@@ -11,7 +14,10 @@ const Router = createStackNavigator(
     Second,
     ProductConfirmation,
     Third,
-    Confirmation
+    Confirmation,
+    EmailAdd,
+    EmailConfirm,
+    FinalPage
   },
   {
     initialRouteName: 'App',

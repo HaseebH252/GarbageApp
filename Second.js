@@ -18,8 +18,9 @@ import {
   View,
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
-import { Button, Text, H2, H3, Container, Content, Header, Form, Item, Input, Label, Icon,Image} from 'native-base';
-import DatePicker from 'react-native-datepicker'
+import { Button, Text, H2, H3, Container, Content, Header, Form, Item, Input, Label, Icon,Thumbnail} from 'native-base';
+import DatePicker from 'react-native-datepicker';
+
 
 
 const instructions = Platform.select({
@@ -45,6 +46,7 @@ export default class App extends Component<Props> {
 
   state = {
     photo:null,
+    uri : "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/uploaddefault.png?alt=media&token=3d3c00eb-fd38-4f27-9f1f-a94f462331d3",
 
     productName: '',
     productPhoto: '',
@@ -62,9 +64,18 @@ export default class App extends Component<Props> {
      ImagePicker.launchImageLibrary(options, response => {
        if (response.uri) {
          this.setState({ photo: response })
+         this.setState({ uri: response.uri })
        }
      })
    }
+
+
+
+
+
+
+
+
 
 
 
@@ -86,9 +97,10 @@ export default class App extends Component<Props> {
 
 
 
+
   render() {
 
-    const { photo } = this.state
+    const { photo } = this.state;
 
     return (
         <Container>
@@ -102,11 +114,24 @@ export default class App extends Component<Props> {
               />
             </Item>
 
+            <Thumbnail
+            square large
+            source={{uri: this.state.uri}}
+            style={
+              {
+                height: 90,
+                alignSelf: 'center',
+                width: 90,
+              }
+              }/>
+
             <Button
               style = {styles.UploadImage} bordered success
               onPress={this.handleChoosePhoto} >
-              <Text> Choose Photo </Text>
+              <Text> Choose Photo -- Limit 1 Image</Text>
             </Button>
+
+
 
 
             <Item regular style={styles.descriptionText}>
@@ -158,7 +183,11 @@ export default class App extends Component<Props> {
               }}
               onDateChange={(pickupDate) => {this.setState({pickupDate: pickupDate})}}            />
 
-            <Button style = {styles.submitButton} block success
+
+
+            <View style={styles.buttonContainer}>
+
+            <Button style = {styles.submitButton} block danger
             onPress={() => this.props.navigation.navigate( 'ProductConfirmation',
               {
                 productName: this.state.productName,
@@ -168,8 +197,10 @@ export default class App extends Component<Props> {
                 productPhoto: photo.uri
               }
             )}>
-              <Text> Next: Customer Info</Text>
+              <Text style={styles.buttonText}> Next: Customer Info</Text>
             </Button>
+
+            </View>
 
 
           </Content>
@@ -223,7 +254,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 3
   },
-
+  buttonText: {
+    alignSelf: 'center',
+    color: 'black'
+    },
   conditionDropdown: {
     backgroundColor: 'white',
     flex: 1,
@@ -231,7 +265,6 @@ const styles = StyleSheet.create({
 
   },
   h3Text:{
-    //paddingVertical: 3,
     fontSize: 18,
     color: 'white'
   },

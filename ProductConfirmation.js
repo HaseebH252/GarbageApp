@@ -53,38 +53,32 @@ export default class App extends Component<Props> {
       prodDate: pickupDate,
       prodPhoto: productURL
 
-    });
+    })
+    return;
   }
 
 
   // The uploadImage function that you are going to use:
 ImageUpload(uri,imageName,mime){
-    return new Promise((resolve, reject) => {
-      const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri
+    return new Promise((resolve) => {
         let uploadBlob = null
         const storageRef = firebase.storage().ref("/uploads");
         const imageRef = storageRef.child(imageName + ".jpg")
-        fs.readFile(uploadUri, 'base64')
+        fs.readFile(uri, 'base64')
         .then((data) => {
           return Blob.build(data, { type: `${mime};BASE64` })
         })
         .then((blob) => {
           uploadBlob = blob
-          return imageRef.put(uri, { contentType: mime, name: imageName });
+          return imageRef.put(uri);
         })
         .then(() => {
           uploadBlob.close()
           console.log(imageRef.getDownloadURL())
           this.setState({productURL: imageRef.getDownloadURL()})
-          return imageRef.getDownloadURL()
+          return;
+        })
 
-        })
-        .then((url) => {
-          resolve(url)
-        })
-        .catch((error) => {
-          reject(error)
-        })
     })
   }
 
@@ -103,12 +97,18 @@ ImageUpload(uri,imageName,mime){
     const pickupDate = this.props.navigation.getParam('pickupDate', 'N/A');
     const productPhoto = this.props.navigation.getParam('productPhoto', 'N/A');
 
+
+    {this.ImageUpload(productPhoto,productName,'images/jpg')};
+
     const {productURL} = this.state;
 
 
     return (
       <Container>
         <Content contentContainerStyle={styles.content}>
+
+
+
 
           <Text style = {styles.h3Text}>Product Name: {productName}</Text>
           <Text style = {styles.h3Text}>Product Description: {descriptionName}</Text>
@@ -137,14 +137,13 @@ ImageUpload(uri,imageName,mime){
             style={styles.submitButton}
             onPress={() => this.props.navigation.navigate('Second')}>
 
-              <Text style={styles.buttonText}>No I Want to Change Somthing</Text>
+              <Text style={styles.buttonText}>Go Back</Text>
             </Button>
 
             <Button bordered success
             onPress={() => {
               this.props.navigation.navigate('Third');
               this.addToDatabase(productName,descriptionName,conditionChange,pickupDate,productURL);
-              this.ImageUpload(productPhoto,productName,'images/jpg');
             }}
             style={styles.submitButton}>
               <Text style={styles.buttonText}>Continue</Text>
@@ -165,23 +164,24 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
     },
+    submitButton:
+      {
+        backgroundColor: "#000",
+        marginTop: "auto",
+        padding: 15,
+        flex: 1,
+        marginRight: 10,
+        marginBottom: 10
+      },
   h3Text:{
     fontSize: 18,
     color: 'white',
     paddingVertical: 5,
     marginTop: 10
   },
-  submitButton:
-    {
-      backgroundColor: "#ffffff",
-      marginTop: "auto",
-      padding: 15,
-      flex: 1,
-      marginRight: 10,
-      marginBottom: 10
-    },
+
     buttonContainer: {
       flexDirection: 'row',
       flexGrow: 1,

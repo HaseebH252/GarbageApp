@@ -111,7 +111,7 @@ export default class App extends Component<Props> {
         </View>
 
         <View style={styles.payText}>
-          <Text style = {styles.h3Text}> You will be charged $1 to upload this </Text>
+          <Text style = {styles.h3Text}> $1 upload fee </Text>
         </View>
 
           <View style={styles.buttonContainer}>
@@ -123,14 +123,14 @@ export default class App extends Component<Props> {
                 this.props.navigation.navigate('Third');
               }}>
 
-              <Text style={styles.buttonText}>No I Want to Change Somthing</Text>
+              <Text style={styles.buttonText}>Go Back</Text>
             </Button>
 
             <Button bordered success style={styles.submitButton}
             onPress={() => {
                 this.pay(fullName,contactNumber,contactEmail,streetAddress,city,zipCode,selectedState);
               }}>
-              <Text style={styles.buttonText}>Yup Looks Good</Text>
+              <Text style={styles.buttonText}>I Accept</Text>
             </Button>
           </View>
 
@@ -148,8 +148,18 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
     },
+    submitButton:
+      {
+        backgroundColor: "#000",
+        marginTop: "auto",
+        padding: 15,
+        flex: 1,
+        marginRight: 10,
+        marginBottom: 10,
+        alignSelf: 'center'
+      },
   payText:{
     fontSize: 18,
     color: 'white',
@@ -165,16 +175,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     marginTop: 10
   },
-  submitButton:
-    {
-      backgroundColor: "#ffffff",
-      marginTop: "auto",
-      padding: 15,
-      flex: 1,
-      marginRight: 10,
-      marginBottom: 10,
-      alignSelf: 'center'
-    },
+
     buttonContainer: {
       flexDirection: 'row',
       flexGrow: 1,

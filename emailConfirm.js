@@ -67,21 +67,22 @@ export default class App extends Component<Props> {
 
           <View style={styles.buttonContainer}>
             <Button
-            bordered
-            danger
+            sucess
             style={styles.submitButton}
             onPress={() => {
                 this.props.navigation.navigate('EmailAdd');
               }}>
 
-              <Text style={styles.buttonText}>No I Want to Change Somthing</Text>
+              <Text style={styles.buttonText}>Go Back</Text>
             </Button>
 
-            <Button bordered success style={styles.submitButton}
+            <Button  success style={styles.submitButton}
             onPress={() => {
                 this.addToDatabase(fullName,contactEmail,preferredCounty);
-              }}>
-              <Text style={styles.buttonText}>Yup Looks Good</Text>
+                alert('Thanks! You Have Been Added.');
+                this.props.navigation.navigate('App');
+                }}>
+              <Text style={styles.buttonText}>Confirm</Text>
             </Button>
           </View>
 
@@ -99,7 +100,8 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
+    fontSize: 24
     },
   h3Text:{
     fontSize: 18,
@@ -109,12 +111,13 @@ const styles = StyleSheet.create({
   },
   submitButton:
     {
-      backgroundColor: "#ffffff",
+      backgroundColor: "#000",
       marginTop: "auto",
       padding: 15,
       flex: 1,
       marginRight: 10,
-      marginBottom: 10
+      marginBottom: 10,
+
     },
     buttonContainer: {
       flexDirection: 'row',

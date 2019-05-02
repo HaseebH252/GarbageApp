@@ -144,7 +144,7 @@ export default class App extends Component<Props> {
                   selectedState: this.state.selectedState
                 }
             )}>
-              <Text style= {styles.buttonText}> Confirmation Page</Text>
+              <Text style= {styles.buttonText}> Almost There</Text>
             </Button>
           </Content>
       </Container>
@@ -158,18 +158,22 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
+    fontSize: 24
     },
+submitButton:
+  {
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    backgroundColor: "#000"
+
+  },
   content: {
     paddingHorizontal: '5%',
     flexGrow: 1,
     backgroundColor: "#086826"
   },
-  submitButton:{
-    marginTop: "auto",
-    marginBottom: 40,
-    backgroundColor: "#ffffff"
-  },
+
   descriptionText:{
     marginTop: 'auto',
     marginBottom: 30,

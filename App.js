@@ -18,7 +18,7 @@ export default class Second extends Component<Props>
   {
    static navigationOptions =
     {
-     title: 'Home',
+     title: 'Rated #1 Junk Collection App in the World',
      headerStyle:
       {
        backgroundColor: '#ffffff',
@@ -26,21 +26,29 @@ export default class Second extends Component<Props>
      headerTintColor: 'green'
     };
  render() {
-    const logo = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/logo.png?alt=media&token=c1b0fa6c-28f2-4cec-8189-a08fe7cd59a9";
-    const icon = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/icon.png?alt=media&token=20942027-daaf-4782-bd7d-6860e21d83c2";
+    const uri = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/icon.png?alt=media&token=4ae87430-6d43-419c-84b1-a617f3f51f12";
+    const logo = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/logo%20(1).png?alt=media&token=32b3e4fb-f63e-4fae-8e1c-18eb33bc37c4";
     return (
       <Container>
         <Content contentContainerStyle={styles.content}>
-          <Thumbnail square large source={{uri: logo}} style={{ height: 40, width: 350}}/>
-          <Thumbnail square large source={{uri: icon}} style={{ height: 400, width: 350}}/>
+
+                <Thumbnail square large source={{uri: logo}} style={{
+                  height: 55,
+                  width: 340,
+                  marginTop: 100,
+                  marginBottom: 30
+
+                  }}/>
+
+          <Thumbnail square large source={{uri: uri}} style={{ height: 400, width: 350}}/>
           <Button style = {styles.submitButton} block success
                 onPress={() => this.props.navigation.navigate('Second')}>
-               <Text style= {styles.buttonText}> Click Here to Begin Your Hunt </Text>
+               <Text style= {styles.buttonText}>Begin Your Hunt </Text>
           </Button>
 
           <Button style = {styles.submitButton} block success
                 onPress={() => this.props.navigation.navigate('EmailAdd')}>
-               <Text style= {styles.buttonText}> Click Here to Get Added to Our Email List </Text>
+               <Text style= {styles.buttonText}> Join Our Mailing List </Text>
           </Button>
         </Content>
       </Container>
@@ -53,20 +61,6 @@ buttonContainer:
     flexDirection: 'row'
   },
 
-Item:
-  {
-    width: '95%',
-    marginTop: 100,
-    marginBottom: 50,
-    backgroundColor: "#ffffff",
-    shadowOffset: { width: 10, height: 10 },
-    shadowColor: 'black',
-    shadowOpacity: 0.5,
-    backgroundColor: 'white',
-    borderRadius: 3,
-    justifyContent: 'center',
-  },
-
 content:
   {
     paddingHorizontal: '5%',
@@ -75,13 +69,14 @@ content:
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
+    fontSize: 24
     },
 submitButton:
   {
     marginTop: 'auto',
     marginBottom: 'auto',
-    backgroundColor: "#ffffff"
+    backgroundColor: "#000"
 
   },
 });

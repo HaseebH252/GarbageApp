@@ -56,7 +56,7 @@ export default class App extends Component<Props> {
 
   };
 
-
+//Image picker function
   handleChoosePhoto = () => {
      const options = {
        noData: true,
@@ -64,10 +64,12 @@ export default class App extends Component<Props> {
      ImagePicker.launchImageLibrary(options, response => {
        if (response.uri) {
          this.setState({ photo: response })
+         console.log(response)
          this.setState({ uri: response.uri })
        }
      })
    }
+//End Image Picker Function
 
 
 
@@ -76,9 +78,7 @@ export default class App extends Component<Props> {
 
 
 
-
-
-
+//on state change functions
   onProductNameChange = (productName) => {
     this.setState({ productName: productName });
   }
@@ -91,16 +91,13 @@ export default class App extends Component<Props> {
   onPickupDateChange = (pickupDate) => {
     this.setState({ pickupDate: pickupDate });
   }
-
-
-
-
+// End state change functions
 
 
 
   render() {
 
-    const { photo } = this.state;
+    const { uri } = this.state;
 
     return (
         <Container>
@@ -128,7 +125,7 @@ export default class App extends Component<Props> {
             <Button
               style = {styles.UploadImage} bordered success
               onPress={this.handleChoosePhoto} >
-              <Text> Choose Photo -- Limit 1 Image</Text>
+              <Text style={styles.buttonText}> Upload Image</Text>
             </Button>
 
 
@@ -194,7 +191,7 @@ export default class App extends Component<Props> {
                 descriptionName: this.state.descriptionName,
                 conditionChange: this.state.conditionChange,
                 pickupDate: this.state.pickupDate,
-                productPhoto: photo.uri
+                productPhoto: uri
               }
             )}>
               <Text style={styles.buttonText}> Next: Customer Info</Text>
@@ -218,17 +215,11 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     backgroundColor: "#086826"
   },
-  submitButton:{
-    marginTop: 50,
-    marginBottom: 40,
-    backgroundColor: "#ffffff",
-    width:"100%",
-    alignSelf: "center"
-  },
+
   UploadImage:{
     marginTop: 50,
     marginBottom: 40,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#000",
     alignSelf: 'center'
   },
   uploadButton:{
@@ -256,7 +247,15 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: 'center',
-    color: 'black'
+    color: 'white',
+    fontSize: 24
+    },
+    submitButton:{
+      marginTop: 50,
+      marginBottom: 10,
+      backgroundColor: "#000",
+      width:"100%",
+      alignSelf: "center"
     },
   conditionDropdown: {
     backgroundColor: 'white',

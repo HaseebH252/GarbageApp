@@ -8,7 +8,7 @@
  */
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker} from 'native-base';
+import { Button, H3, Container, Content, Header, Form, Item, Input, Label, Icon, Picker, Thumbnail} from 'native-base';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -49,9 +49,17 @@ export default class App extends Component<Props> {
   }
 
   render() {
+    const uri = "https://firebasestorage.googleapis.com/v0/b/junkapp-afd41.appspot.com/o/NJ2.png?alt=media&token=e8f3405c-f862-4513-9a11-bf4a7a919fa2";
     return (
         <Container>
           <Content contentContainerStyle={styles.content}>
+
+
+
+
+
+
+
 
             <Item regular style={styles.descriptionText}>
               <Input
@@ -75,10 +83,23 @@ export default class App extends Component<Props> {
             <Item regular style={styles.descriptionText}>
               <Input
                 value={this.state.preferredCounty}
-                placeholder='Enter Preffered County'
+                placeholder='Enter Preferred County'
                 onChangeText={this.onpreferredCountyChange}
               />
             </Item>
+
+            <Thumbnail source={{uri: uri}} style={{
+              height: 150,
+              width: 150,
+              alignSelf: 'center',
+              }}/>
+
+            <Text style = {styles.h3Text}>*By joining our mailing list,
+            you will have immediate access to a list of valuable JUNK items sent directly to your email.
+            You can customize how frequent you receive your emails or have it filtered by your preferred counties. </Text>
+
+
+
 
             <Button
               style = {styles.submitButton}
@@ -110,16 +131,31 @@ const styles = StyleSheet.create({
     },
   content: {
     paddingHorizontal: '5%',
+    marginTop: 15,
     flexGrow: 1,
     backgroundColor: "#086826"
   },
-  submitButton:{
-    marginTop: "auto",
-    marginBottom: 40,
-    backgroundColor: "#ffffff"
+  h3Text:{
+    fontSize: 18,
+    color: 'white',
+    paddingVertical: 5,
+    marginTop:35
+  },
+
+  buttonText: {
+    alignSelf: 'center',
+    color: 'white',
+    fontSize: 24
+    },
+submitButton:
+  {
+    marginTop: 'auto',
+    marginBottom: 10,
+    backgroundColor: "#000"
+
   },
   descriptionText:{
-    marginTop: 'auto',
+    marginTop: 20 ,
     marginBottom: 30,
     backgroundColor: "#ffffff"
   },

@@ -16,6 +16,7 @@
     "react-native-gesture-handler": "^1.0.16",
     "react-native-image-picker": "^0.28.0",
     "react-native-payments": "^0.7.1",
+    "react-native-popup-dialog": "^0.18.2",
     "react-navigation": "^3.3.2",
     "tipsi-stripe": "^7.5.0"
   },

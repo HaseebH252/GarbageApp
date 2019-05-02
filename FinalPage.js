@@ -67,9 +67,14 @@ export default class App extends Component<Props> {
               >
                 <DialogContent style={styles.dialogContentView}>
 
-                <Text style= {styles.dialogText}>Hello, We are the Startup JunkApp,
-                Where real sellers meet real buyers. Our mission is to get unsellable or
-                unwanted items out of your way!, for contact information please email someone@njit.edu
+                <Text style= {styles.dialogText}>
+                  Welcome to Junkster. The #1 Rated Junk App in the World.
+                  Our mission at Junkster is to eliminate unnecessary junk at
+                  landfills by helping real sellers get rid of unwanted items
+                  immediately via an interested junk hauler or fixer. Our fees
+                  are low but our mission is big. If you have any questions,
+                  do not hesitate to contact us at (908) 818-8817 or email us
+                  at  junkster@gmail.com.
                 </Text>
 
                 <Button

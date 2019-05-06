@@ -175,7 +175,7 @@ export default class App extends Component<Props> {
                 dateInput: {
                   marginLeft: 36,
                   top: 5,
-                  backgroundColor: "#ffffff"
+                  backgroundColor: "#fff"
                 }
               }}
               onDateChange={(pickupDate) => {this.setState({pickupDate: pickupDate})}}            />
@@ -266,10 +266,5 @@ const styles = StyleSheet.create({
   h3Text:{
     fontSize: 18,
     color: 'white'
-  },
-  dateTest: {
-    borderRadius: 4,
-    backgroundColor: 'white',
-    borderColor: 'black'
   }
 });
